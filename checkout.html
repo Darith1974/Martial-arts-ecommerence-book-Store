@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title> 
+	<!--<h1 class="default_h1"> Future of Martial arts</h1>-->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="This is a amateur website about Martial Arts"/>
+	<meta name="keywords" content="Martial Arts, Self defence, Boxing, Kung fu, Karate, Kick Boxing"/>
+	<meta http-equiv="Content-Language" content="en"/>
+	<script type="text/javascript" src="scriptstore.js" language="javascript"></script>
+	<link rel="stylesheet" type="text/css" href="martial_arts_2.css" />
+	<!-- General Heading with link, css & meta data. Notice i use a h1 element(in the body element) for the title
+	,the reason been: title will not workI researched this online but to no avail plus i seek assistance in the
+	lab but we were unable to resolve it. Still it has to be left in as it will generate a error in the validator
+	otherwise. Wave will generate a error as it is blank but there is explicit heading when one opens this webpage.-->
+</head>
+
+<body lang="en">
+	<h1 class="default_h1"> Martial Arts Book Store</h1>
+	<div id="menu_bar">
+	<!-- This div creates a menu bar with additional styling for it's ul and li elements. Bullets are removed by the
+	list-style attribute(ul). The menu goes horizontal by using float attribute(li) and then specifying each link @ 25%-->	
+	<ul>
+		<li><a href="./index.html">Home</a></li>
+		<li><a href="./history.html">History</a></li>
+		<li><a href="./Applications_and_Uses.html">Applications and Uses</a></li>
+		<li><a href="./future.html">Future</a></li>
+		<li><a href="./store.html">Store</a></li>
+	</ul>
+	</div>
+	<h2 class="default_h2">Welcome to my Martial arts Book Store - Checkout Section</h2>
+	<form action="MAILTO:someone@example.com" method="post" enctype="text/plain" id ="test46" class="special_p" onsubmit="return Submit()">
+			Name:<br />
+			<input type="text" name="name" value="your name" id="nameid"/><br />
+			E-mail:<br />
+			<input type="text" name="mail" value="your email" id="mailid"/><br />
+			Town:<br />
+			<input type="text" name="Town" value="Dublin" id="townid"/><br />
+			Postcode:<br />
+			<input type="text" name="Postcode" value="D24" id="postcodeid"/><br />
+			County:<br />
+			<input type="text" name="County" value="Dublin" id="countyid"/><br />
+			Country:<br />
+			<input type="text" name="Country" value="Ireland" id="Countryid"/><br />
+			<label for="Credit Card Number">Enter your Credit Card Number</label><br/>
+			<input type="text" name ="CreditCardNumber" id="CreditCardNumber" value="" onkeyup="checkCCNumber()" /><br/>
+					<label for="Credit Card">Select your Credit Card</label><br/>
+					<select id="Credit Card"><br />
+					<option value="Mastercard">Mastercard</option>
+					<option value="Visa">Visa</option>
+					</select><br/>
+			<input type="checkbox" id="cc_num">
+			<label for="cc_num">Valid number?</label>
+			Comment:<br />
+			<input type="text" name="comment" value="your comment" size="50" />
+			<br /><br />
+			<script> Bill()</script>
+			<input type="submit" value="Send">
+			<input type="reset" value="Reset">
+			</form>
+			<!--This form takes in the customer's details through the input funtions. Each element is given a id which is then accessed in a DOM
+			function. The onsubmit attribute calls return submit function which peforms a series of checks on each of the input elements. More explanation in the 
+			external script file and report. For the credit card number, the onkeyup attribute calls a function checkCCNumber which checks the lenght
+			of the number enetered and will also tick the checkbox if valid. If onsubmit returns true, then contenst of the form will be emailed to the address
+			listed in the action attribute. Plus please notice the Bill() function is called which add input elements containing the items to be sold
+			plus the overall total.-->
+	
+				
+	
+</body>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>

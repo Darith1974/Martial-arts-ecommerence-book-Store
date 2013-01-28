@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<!--<h1 class="default_h1">Martial Arts</h1>-->
+	<meta name="description" content="This is a amateur website about Martial Arts"/>
+	<meta name="keywords" content="Martial Arts, Self defence, Boxing, Kung fu, Karate, Kick Boxing"/>
+	<meta http-equiv="Content-Language" content="en"/>
+	<link rel="StyleSheet" type="text/css" href="martial_arts_2.css"/>
+	<!-- General Heading with link, css & meta data. Notice i use a h1 element(in the body element) for the title
+	,the reason been: title element will not work. I researched this online but to no avail plus i seek assistance in the
+	lab but we were unable to resolve it. Still it has to be left in as it will generate a error in the validator
+	otherwise. Wave will generate a error as it is blank but there is explicit heading when one opens this webpage.-->
+</head>
+
+<body lang="en">
+	<h1 class="default_h1">Martial Arts</h1>
+	<div id="overall">
+	<!-- This div encomoasses the whole body element. I have used divs to layout this webpage as opposed
+	to tables as there can be compatibity issues. This div contains nested divs which i will explain as we go along-->	
+		<div id="menu_bar">
+		<!-- This div creates a menu bar with additional styling for it's ul and li elements. Bullets are removed by the
+		list-style attribute(ul). The menu goes horizontal by using float attribute(li) and then specifying each link @ 25%-->	
+			<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./history.html">History</a></li>
+			<li><a href="./Applications_and_Uses.html">Applications and Uses</a></li>
+			<li><a href="./future.html">Future</a></li>
+			<li><a href="./store.html">Store</a></li>
+			</ul>
+		</div>
+		<div id="sidebar">
+		<!-- I created this sidebar to make the webpage look different. Basically this div element is constructed to 
+		float left inside the "overall" div beside the "main_content" div. Width is define at 200px( had issue with %
+		in different browsers). Height set to auto. Bullets are removed by the list style attribute. border and Colors styles
+		accordinally. -->
+			<h2 class="default_h2">Other Links</h2>
+			<p class="special_p">These are other links to other sub categories not directly in main menu bar </p>
+			<!-- I used this class to add a bit styling as regards color, border etc. But it is also usefull in
+			centering other elements such as images, iframes etc., which can be tricky to do sometimes. Unsure if
+			it is the most efficient way but it will suffice for the moment. I simply used the text align attribute
+			set to center.-->
+			<ul>
+				<li><a href="./Boxing.html">Boxing</a></li>
+				<li><a href="./TaeKwondo.html">TaeKwonDo</a></li>
+				<li><a href="./kung_fu.html">Kung Fu</a></li>
+				<li><a href="./Karate.html">Karate</a></li>
+				<li><a href="./Thai_Kick_boxing.html">Thai Kick boxing</a></li>
+				<li><a href="./Sambo.html">Sambo</a></li>
+				<li><a href="./Kempo.html">Kempo</a></li>
+				<li><a href="./Aikido.html">Aikido</a></li>
+				<li><a href="./Judo.html">Judo</a></li>
+			</ul>
+		</div>   
+		<div id="main_content">
+			<!-- This is the main div inside the "overall" div. -->   
+			<h2 class="default_h2">This Website</h2>
+			
+			<p class="special_p">
+			<!-- I used this class to add a bit styling as regards color, border etc. But it is also usefull in
+			centering other elements such as images, iframes etc., which can be tricky to do sometimes. Unsure if
+			it is the most efficient way but it will suffice for the moment. I simply used the text align attribute
+			set to center.-->
+			This website will primarily deal with a personal hobby of mine over the years, i.e. martial arts.<br />
+			It will take it alook at its history, origins, present directions, uses and future as regards myself <br />
+			and maybe society myself.  
+			</p>
+			
+			<p class="special_p"><img src="./images/martial-arts-books.jpg" alt="Image of MArtial Arts"/></p>
+			
+			<p class="special_p">
+			Some of the main martial arts are<br />
+			Kung fu, Karate, boxing, kick<br />
+			boxing and Thai khon do. 
+			</p>
+			<h2 class="default_h2">External Links</h2>
+			<p>This website is unofficial.</p>
+			<p>This site was last updated on 30<sup>th</sup> April 2012.</p>
+				<form action="mailto:admin@test.com">
+				<!-- A nice form which adds functionality to any website. Nothing new here except i use the "special_p"
+				class to center and style the element.-->
+				<p class="special_p">
+					<label for="customer_name">Enter your Name</label><br/>
+					<input type="text" id="customer_name"/><br/>
+					<label for="customer_contact">Enter your EMail Address</label><br/>
+					<input type="text" id="customer_contact"/><br/>
+					<label for="martial_art">Select your Martial Art</label><br/>
+					<select id="martial_art">
+					<option value="Kung fu">Kung fu</option>
+					<option value="Karate">Karate</option>
+					<option value="TaeKwondo">TaeKwondo</option>
+					<option value="Thai Kick Boxing">Thai Kick Boxing</option>
+					<option value="Sambo">Sambo</option>
+					<option value="Kempo">Kempo</option>
+					<option value="Aikido">Aikido</option>
+					<option value="Judo">Judo</option>
+					<option value="Boxing">Boxing</option>
+					</select><br/>
+					<label for="customer_requirements">Describe your own martial art experience</label><br/>
+					<textarea id="customer_requirements" rows="5" cols="40"></textarea><br/>
+					<input type="submit" value="Click here, and we will contact you soon"/>
+				</p>
+				</form>
+				<p class="special_p">Visit the link:<a href="http://en.wikipedia.org/wiki/Martial_arts">Wikipedia reference
+				for Martial Arts</a> for more reference material.</p>
+				<!-- I wanted to use a iframe here but the doctype does not support it. There is a hack by modifying the dtd but i decided 					not to go that road. -->	
+		</div>
+	</div>
+</body>
+</html>
